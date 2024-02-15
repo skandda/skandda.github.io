@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,900&family=Protest+Strike&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,200;9..40,300;9..40,400;9..40,900&family=Protest+Strike&family=Titillium+Web:wght@200;300;700&display=swap');
+
+/* CSS HEX */
+:root {
+--fawn: #f7b267ff; 
+--atomic-tangerine: #f79d65ff;
+--coral: #f4845fff;
+--bittersweet: #f27059ff;
+--bittersweet-2: #f25c54ff;
+}
+
+* {
+  font-family: "Titillium Web", sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  background: #3f3f3f;
+
+}
+
+.nav-container {
+  width:100%;
+  opacity: 100%;
+  background-color: #2f2f2f;
+  overflow: hidden;
+  position: fixed;
+  z-index: 1000;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.name {
+  font-family: "Protest Strike", sans-serif;
+  font-size: 30px;
+  float: left;
+  display: flex;
+  padding: 1.25rem 1rem;
+  color: var(--bittersweet-2);
+  font-weight: lighter;
+  background-color: rgb(242,92,84);;
+  background-image: linear-gradient(90deg, rgba(242,92,84,1) 0%, rgba(242,112,89,1) 43%, rgba(247,157,101,1) 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.desktop-nav-list {
+  display: flex;
+  gap: 2rem;
+  font-size: 20px;
+  padding: 1.25rem 1rem;
+  /* margin-left: auto; */
+}
+
+.desktop-nav-list-item a {
+  text-decoration: none;
+  color: var(--coral);
+}
+
+.desktop-nav-list-item a:hover {
+  transition: .7s;
+  cursor: pointer;
+  color: var(--bittersweet-2);
+}
+
+.social-container {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+  padding: 0 1rem;
+  font-size: 25px;
+}
+
+.desktop-nav-social a, .desktop-nav-social button {
+  text-decoration: none;
+  color: white;
+  display:block;  
+  transition: transform .3s;
+  background: none;
+}
+
+.desktop-nav-social button:hover {
+  cursor: pointer;
+  font-size: 25px;  
+}
+
+.desktop-nav-social a:hover, .desktop-nav-social button:hover {
+  color: var(--coral);
+  transform: scale(1.75) rotate(360deg);
+}
+
+.contact {
+  text-decoration: none;
+  color: var(--coral);
+}
+
+.contact:hover {
+  transition: .7s;
+  color: var(--bittersweet-2);
+}
+
+.intro {
+  padding-top: 7rem;
+  color:var(--fawn);
+  font-size: 50px;
+  text-align: center;
+  font-family: 'Protest Strike', sans-serif;  
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.intro p {
+  font-size: 18px;
+  color: var(--atomic-tangerine)
+}
+
+.container {
+  width:100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.homebutton { 
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 30px;
+  padding: 2rem 5rem 2rem 5rem;
+  margin: 2rem 0rem 0rem 0rem;
+  overflow: hidden;
+  transition: transform 200ms ease-in-out;
+}
+
+
+.exp-container {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.5rem;
+}
+
+.exp-item {
+  background-color: rgb(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 0.75rem;
+}
+
+.exp-item .exp-text {
+  font-size: 15px;
+}
+
+.star-container {
+  font-size: 15px;
+}
+
+.homebutton.left {
+  transform: translateY(-220%);
+}
+
+.homebutton h5 {
+  color:var(--fawn);
+}
+
+.b {
+  margin-top: 5px;
+  font-size: 25px;
+  border-radius: 5rem;
+  background-color: #2f2f2f;
+  border: 1px solid #b5b5b5;
+  color:var(--atomic-tangerine);
+  padding: 0rem 2.5rem 0rem 2.5rem;
+}
+
+.b:hover {
+  cursor: pointer;
+}
+
+.l:hover {
+  cursor: pointer;
+  color:var(--atomic-tangerine);
+  transform:scale(1.3);
+  
+}
+
+.l {
+  font-size: 60px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  transition: all .7s;
+  /* border: 2px solid #2f2f2f; */
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aboutme {
+  color:var(--fawn);
+  font-size: 50px;
+  margin-top: 16.641rem;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Protest Strike', sans-serif;
+  padding-top: 5rem;
+  opacity: 0;
+  background: #424242;
+  padding-bottom: 5rem; 
+  animation: fadeIn 1s ease-in-out forwards;
+}
+.aboutme p, .work p, .projects p, .contactme p {
+  font-size: 18px;
+  color: var(--atomic-tangerine)
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.half {
+  width: 50%;
+  padding:20px;
+  box-sizing: border-box;
+  text-align: left;
+  margin-left: 6rem;
+  font-size: 25px;  
+  /* margin-bottom: 20px; */
+}
+
+.about-text p {
+  margin-top: 1rem;
+}
+
+.work {
+  color:var(--fawn);
+  font-size: 50px;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Protest Strike', sans-serif;
+  padding-top: 5rem;
+  opacity: 0;
+  padding-bottom: 5rem;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.work-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2.7rem;
+  flex-wrap: wrap;
+}
+
+.accordian {
+  margin-top: 0.3rem;
+  border-radius: 10px;
+  background-color: #2f2f2f;
+  width: 800px;
+  padding: 0.7rem;
+}
+
+.accordian .job-desc {
+
+  /* font-size: 20px; */
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.accordian .job-desc p {
+  font-size: 20px;
+  font-weight: 200;
+}
+
+.menu-button {
+  font-size: 25px;
+  height: 30px;
+}
+
+.right {
+  text-align: right;
+  display: flex;
+}
+
+.dates {
+  margin-right: 10px;
+}
+
+.accordian:hover {
+  background-color: #1f1f1f;
+  transition: 0.4s;
+  cursor: pointer;
+}
+
+.accordian.open {
+  background-color: #1f1f1f;
+}
+
+.accordian-content {
+  background-color: #1f1f1f;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  width: 600px;
+  padding: 0.7rem;
+  margin-bottom: 0.2rem; 
+  text-align: left;
+  display: flex;
+}
+.accordian-content p {
+  font-size: 15px;
+  
+}
+
+.arrow {
+  font-size: 25px;
+  height: 15px;
+}
+.loc {
+  margin-right: 3px;
+  font-size: 25px;
+  height: 15px;
+  color: var(--fawn);
+}
+
+.accordian-content .work-desc {
+  font-weight: 600;
+}
+
+.skill-container {
+  margin-top: 5px;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  padding: 0.5rem 0.5rem;
+}
+
+.skill-item {
+  background-color: #E57A44;
+  border-radius: 15px;
+  padding: 0.75rem;
+}
+
+.skill-item .skill-text {
+  font-size: 12px;
+  color: black;
+}
+
+.half-exp-desc {
+  width: 80%;
+}
+
+.half-exp.img {
+  width: 20%;
+  padding-left: 100px;
+}
+
+.exp-img {
+  width: 125px;
+  height: 125px;
+  display:flex;
+}
+
+.projects {
+  color:var(--fawn);
+  font-size: 50px;
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Protest Strike', sans-serif;
+  padding-top: 5rem;
+  opacity: 0;
+  padding-bottom: 5rem;
+  animation: fadeIn 1s ease-in-out forwards;
+  background: #424242;
+}
+
+.project-container {
+  display: flex;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.project-item {
+  background-color: rgb(0, 0, 0, 0.1);
+  width: 20rem;
+  height: 30rem;
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.project-item h4 {
+  margin-top: 0.5rem;
+  font-size: 20px;
+  font-weight: 400;
+}
+.project-item img {
+  margin-top: 0.25rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 5px;
+}
+.project-item p {
+  font-size: 17px;
+  font-weight: 100;
+}
+
+.project-desc {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.project-item .skill-container {
+  justify-content: center;
+}
+
+.project-item .skill-text, .skill-text {
+  font-weight: 600;
+}
+
+.project-item .project-button {
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: #1f1f1f;
+  font-size: 20px;
+  padding: 0rem 2.5rem;
+  color: var(--atomic-tangerine);
+  border-radius: 15px;
+  border: 1px solid black;
+}
+
+.button-manager {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-manager a {
+  text-decoration: none;
+}
+
+.contactme {
+  color:var(--fawn);
+  font-size: 50px;
+  overflow: hidden;
+  font-family: 'Protest Strike', sans-serif;
+  padding-top: 2.5rem;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  display: flex;
+  padding-bottom: 2.5rem;
+}
+
+.contactme .rightside {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactme .rightside footer p {
+  font-size: 15px;
+  color: white;
+  font-weight: 600;
+}
+
+.contactme .rightside footer {
+  text-align: center; /* Center the text in the footer */
+  margin-top: auto; /* Push the footer to the bottom */
+  padding: 20px; /* Add padding to the footer */
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  border-top: 1px solid white;
+}
+
+.contactme .leftside {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.contactme .leftside img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: auto;
+}
+
+
+
+.right-left {
+  width: 45%;
+}
+
+.right-right {
+  width: 55%;
+}
+
+.contactme .right-left h3 {
+  margin-left: 50px;
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+
+.contactme .right-left p {
+  margin-left: 50px;
+  font-size: 18px;
+  color: white;
+  font-weight: 100;
+}
+
+.contactme .right-right h3 {
+  text-align: right;
+  margin-right: 50px;
+  text-decoration: underline;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contactme .right-right p {
+  margin-top: 20px;
+  text-align: right;
+  margin-right: 50px;
+  color: white;
+  font-size: 20px;
+  font-weight: 100;
+}
+.right-left p button {
+  color: var(--fawn);
+  text-decoration:solid;
+  font-weight: 600;
+  font-size: 30px;
+  background: none;
+  cursor: pointer;
+}
+
+.contact-container {
+  display: flex;
+  gap: 2rem;
+  text-align: right;
+  color: white;
+  justify-content: right;
+  margin-right: 50px;
+  margin-top: 20px;
+}
+
+.contact-icons {
+  font-size: 50px;
+}
+
+.contact-icons:hover {
+  cursor: pointer;
+}
+
+.contact-container a {
+  color: white;
+  cursor: auto;
+}
