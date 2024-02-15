@@ -13,7 +13,7 @@ function DesktopNav() {
                 <div className='social-container'>
                     <li className='desktop-nav-social'><a href='https://github.com/skandda/' rel="noreferrer" target='_blank'><FaSquareGithub/></a></li>
                     <li className='desktop-nav-social'><a href='https://www.linkedin.com/in/skandda-chandrasekar/' rel='noreferrer' target='_blank'><FaLinkedin/></a></li>
-                    <li className='desktop-nav-social'><a href='./assets/ChandrasekarResume2024.pdf' target='_blank'><FaNewspaper/></a></li>
+                    <li className='desktop-nav-social'><a href='/assets/ChandrasekarResume2024.pdf' target='_blank'><FaNewspaper/></a></li>
                 </div>
 
             </ul>

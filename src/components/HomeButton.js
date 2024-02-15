@@ -4,7 +4,7 @@ import { useState } from 'react'
 function HomeButton() {
 
     var content =  [{title: 'To-Do List', desc: 'A functional to-do list created with React.', link: '/todo-build', b: 'Try Me'},
-                    {title: 'Resume', desc: 'Download my resume.', link:'./assets/ChandrasekerResume2024', b: "Download"}]; 
+                    {title: 'Resume', desc: 'Download my resume.', link:'/assets/ChandrasekerResume2024', b: "Download"}]; 
     const [activeContent, setActiveContent] = useState(0);
     const [slideDirection, setSlideDirection] = useState('');
 

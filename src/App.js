@@ -69,19 +69,19 @@ function App() {
         <div className='work-container'>
           <Work title='Software Engineer Intern' company='Eltropy' dates='May - July 2023'
           desc='Developed web-scraping and embedding solutions for semantic search to provide context for in-site responsive chat-bots.' 
-          location='Remote' img='eltropy.png'
+          location='Remote' img='/assets/eltropy.png'
           skills={['Python', 'Semantic Search', 'Embeddings', 'Web Scraping']}
           start={true}/>
           <Work title='Data Structures Course Tutor' company='Harvey Mudd College' dates='Jan - Dec 2023'
           desc='Tutored and graded students enrolled in Data Structures, helping them implement
           data structures as well as teaching C++ fundamentals.'
-          location='Claremont, CA' img='harveymudd.jpg'
+          location='Claremont, CA' img='/assets/harveymudd.jpg'
           start={false}
           skills={['Data Structures', 'Leadership', 'C++', 'Mentorship']}/>
           <Work title='Intro to CS Course Tutor' company='Harvey Mudd College' dates='Aug - Dec 2022'
           desc='Tutored and graded students enrolled in Intro to CS, helping them understand basic
           programming concepts in Python and various other languages.'
-          location='Claremont, CA' img='harveymudd.jpg' start={false}
+          location='Claremont, CA' img='/assets/harveymudd.jpg' start={false}
           skills={['Python', 'Racket', 'Recursion', 'Leadership', 'Mentorship']}
           />
         </div>
@@ -93,24 +93,24 @@ function App() {
         <p>See the code behind my projects as well as try some out!</p>
         <div className='project-container'>
           <Project title='To-Do List' desc='A functional to-do list made with React.' 
-          img='todolist.png'
+          img='/assets/todolist.png'
           skills={['React.js', 'HTML/CSS']}
           link='/'
           github='https://github.com/skandda/To-Do-List'/>
           <Project title='Playlist Cover Art'
           desc='Automatically creates Spotify playlist covers based on the playlist content.'
-          img='spotify.jpg'
+          img='/assets/spotify.jpg'
           skills={['Python', 'Spotify API', 'OpenAI API']}
           github='https://github.com/skandda/Automatic-Spotify-Cover-Art'/>
           <Project title='Voice-Enabled Chat-Bot'
           desc='A responsive chat-bot that can take audio quesitons and return audio answers.'
-          img='voice.jpg'
+          img='/assets/voice.jpg'
           skills={['Python', 'OpenAI API', 'NLP']}
           github='https://github.com/skandda/Voice-Enabled-Responsive-Chat-Bot' 
           />
           <Project title='Cascade Dungeon Game'
           desc='A wave based survival game with power-ups, various enemies, and more.'
-          img='game.jpg'
+          img='/assets/game.jpg'
           skills={['C#', 'JavaScript', 'Unity']}
           github='https://github.com/skandda/Cascade-Dungeon-Wave-Survival-Game'/>
         </div>
@@ -119,7 +119,7 @@ function App() {
       <section id='contact'>
         <div className='contactme'>
           <div className='leftside'>
-            <img src='Skandda_uncrop_1.jpg' alt='Headshot'/>
+            <img src='/assets/Skandda_uncrop_1.jpg' alt='Headshot'/>
           </div>
           <div className='rightside'>
             <div className='right-left'>
@@ -128,7 +128,7 @@ function App() {
                 you be interested, please do not hesitate to reach out.
               </p>
               <p>
-              <button onClick={() => window.open('./assets/ChandrasekarResume2024.pdf')}>
+              <button onClick={() => window.open('/assets/ChandrasekarResume2024.pdf')}>
               [Download Resume]
               </button>
               </p>
