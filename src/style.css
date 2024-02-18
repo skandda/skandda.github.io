@@ -19,13 +19,18 @@
   list-style: none;
   box-sizing: inherit;
   scroll-behavior: smooth;
-
 }
 
 body {
   background: #3f3f3f;
 
 }
+
+.Mobile {
+  display: none;
+}
+
+
 
 .nav-container {
   width:100%;

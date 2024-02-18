@@ -6,10 +6,25 @@ import Project from './components/Project';
 import { MdEmail } from "react-icons/md";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa6";
+import { FaSquareGithub, FaLinkedin, FaNewspaper } from 'react-icons/fa6'
 import './style.css';
+import './media.css';
 
 function App() {
   return (
+    <>
+    <div className='Mobile'>
+      <h4>Please view on a computer/full screen for specific content.</h4>
+      <p>Please still feel free to contact me or browse my socials and resume.</p>
+      <p>(972)-983-9230 | schandrasekar@g.hmc.edu</p>
+      <ul className='mobile-nav-list'>
+        <div className='mobile-social-container'>
+          <li className='mobile-nav-social'><a href='https://github.com/skandda/' rel="noreferrer" target='_blank'><FaSquareGithub/></a></li>
+          <li className='mobile-nav-social'><a href='https://www.linkedin.com/in/skandda-chandrasekar/' rel='noreferrer' target='_blank'><FaLinkedin/></a></li>
+          <li className='mobile-nav-social'><a href='/assets/ChandrasekarResume2024.pdf' target='_blank'><FaNewspaper/></a></li>          
+        </div>
+      </ul>
+    </div>
     <div className="App">
       <div>
         <DesktopNav />
@@ -95,7 +110,7 @@ function App() {
           <Project title='To-Do List' desc='A functional to-do list made with React.' 
           img='/assets/todolist.png'
           skills={['React.js', 'HTML/CSS']}
-          link='/'
+          link='https://skandda.github.io/To-Do-List/'
           github='https://github.com/skandda/To-Do-List'/>
           <Project title='Playlist Cover Art'
           desc='Automatically creates Spotify playlist covers based on the playlist content.'
@@ -151,6 +166,7 @@ function App() {
         </div>
       </section>
     </div>
+    </>
   );
 }
 
